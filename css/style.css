@@ -11,7 +11,7 @@
 
 body {
 
-    margin: auto;
+
     font-family: 'Poppins', sans-serif;
 }
 
@@ -24,6 +24,7 @@ body {
     background-color: #161616;
     display: flex;
     border-radius: 30px;
+    align-items: center;
     width: 1321px;
     margin: 0 auto;
     margin-bottom: 150px;
@@ -52,8 +53,8 @@ body {
 .banner-title {
 
     width: 50%;
-    padding: 129px 118px;
-    margin: auto;
+    padding: 0px 50px;
+
 }
 
 .banner-title h1 {
@@ -206,32 +207,29 @@ body {
     text-align: center;
 }
 
-.navbar ul {
+.navbar {
 
+    width: 100%;
+}
+
+.navbar ul {
 
     display: flex;
     justify-content: center;
-
 }
 
 .navbar ul li {
 
     list-style: none;
-
 }
-
-
 
 .navbar ul li a {
 
     text-decoration: none;
-    color: white;
     font-size: 20px;
     line-height: 24px;
     color: #B9B9B9;
-    margin-right: 50px;
-
-
+    margin-right: 30px;
 }
 
 hr {
@@ -269,6 +267,13 @@ hr {
 
     }
 
+
+    .banner-title {
+
+        padding: 50px 20px;
+    }
+
+
     .banner-image img {
 
         width: 100%;
@@ -279,7 +284,7 @@ hr {
 
         font-size: 40px;
         line-height: 50px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
 
     }
 
@@ -287,7 +292,7 @@ hr {
         font-size: 14px;
         color: white;
         line-height: 24px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
 
 
     }
@@ -327,6 +332,19 @@ hr {
         display: block;
     }
 
+    .navbar {
+
+        width: 100%;
+    }
+
+    .navbar ul {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
 }
 
 
@@ -336,9 +354,16 @@ hr {
 
         width: 100%;
         flex-direction: column;
+        display: flex;
         justify-content: center;
+        align-items: center;
         margin-bottom: 50px;
+    }
+
+    .banner-title {
+
         text-align: center;
+        margin: 50px 0px;
     }
 
     .banner-image img {
@@ -352,22 +377,10 @@ hr {
         font-size: 40px;
         line-height: 33px;
         margin-bottom: 30px;
-
-
-    }
-
-    .banner-title p {
-        font-size: 14px;
-        color: white;
-        line-height: 24px;
-        margin-bottom: 10px;
         text-align: center;
-        margin-bottom: 30px;
 
 
     }
-
-
 
     .Menubar {
 
@@ -396,12 +409,28 @@ hr {
 
     }
 
+    .navbar {
+
+        width: 100%;
+    }
+
     .navbar ul {
 
         display: flex;
         flex-direction: column;
+        justify-content: center;
+
 
     }
+
+    .navbar ul li {
+
+        margin-top: 20px;
+        text-align: center;
+
+    }
+
+
 
 
 }
