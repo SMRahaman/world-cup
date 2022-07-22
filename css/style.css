@@ -53,6 +53,7 @@ body {
 
     width: 50%;
     padding: 129px 118px;
+    margin: auto;
 }
 
 .banner-title h1 {
@@ -399,7 +400,6 @@ hr {
 
         display: flex;
         flex-direction: column;
-        width: 20px;
 
     }
 
