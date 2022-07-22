@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@500&family=Roboto&display=swap');
+
+
 /* common css */
 
 * {
@@ -6,13 +9,11 @@
 }
 
 
-.main {
+body {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
 }
-
 
 
 /* banner css */
@@ -29,23 +30,29 @@
 
 
 
+
+
 }
 
 .banner-image {
 
-    padding: 33px 79px 0px 0px;
+
+    width: 50%;
+    margin: auto;
+    padding: 30px 30px 0px 30px;
+
 }
 
 .banner-image img {
 
-    width: 581;
-    height: 613px;
+    width: 100%;
 
 }
 
 .banner-title {
 
-    padding: 111px 106px 24px 111px;
+    width: 50%;
+    padding: 129px 118px;
 }
 
 .banner-title h1 {
@@ -73,6 +80,7 @@
     font-size: 20px;
     line-height: 24px;
     border-radius: 5px;
+    border: none;
 }
 
 /* blog css */
@@ -252,29 +260,18 @@ hr {
 
 /* For Tablet */
 
-@media only screen and (min-width:577px) and (max-width:992px) {
+@media only screen and (min-width:687px) and (max-width:992px) {
 
     .banner {
-        width: 734px;
-        height: 398px;
-        margin-bottom: 50px;
+        width: 100%;
+        margin-bottom: 30px;
+
     }
 
     .banner-image img {
 
-        width: 323px;
-        height: 340px;
-    }
+        width: 100%;
 
-    .banner-title {
-
-        padding: 61px 76px 8px 61px;
-
-    }
-
-    .banner-image {
-
-        padding: 58px 11px 0px 0px;
     }
 
     .banner-title h1 {
@@ -294,11 +291,6 @@ hr {
 
     }
 
-    .banner-title button {
-
-        width: 161px;
-        height: 48px;
-    }
 
     .Menubar {
 
@@ -337,7 +329,7 @@ hr {
 }
 
 
-@media only screen and (max-width:576px) {
+@media only screen and (max-width:686px) {
 
     .banner {
 
@@ -345,8 +337,36 @@ hr {
         flex-direction: column;
         justify-content: center;
         margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .banner-image img {
+
+        width: 100%;
 
     }
+
+    .banner-title h1 {
+
+        font-size: 40px;
+        line-height: 33px;
+        margin-bottom: 30px;
+
+
+    }
+
+    .banner-title p {
+        font-size: 14px;
+        color: white;
+        line-height: 24px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-bottom: 30px;
+
+
+    }
+
+
 
     .Menubar {
 
@@ -377,19 +397,11 @@ hr {
 
     .navbar ul {
 
-        width: 100%;
         display: flex;
         flex-direction: column;
-        text-align: center;
-
-
-    }
-
-    .navbar ul li a {
-
-
-        margin-bottom: 10px;
-
+        width: 20px;
 
     }
+
+
 }
