@@ -23,10 +23,8 @@ body {
 
     background-color: #161616;
     display: flex;
-    border-radius: 30px;
     align-items: center;
-    width: 1321px;
-    margin: 0 auto;
+    width: 100%;
     margin-bottom: 150px;
 
 
@@ -115,7 +113,15 @@ body {
     border-radius: 10px;
     font-size: 20px;
     line-height: 30px;
+    font-family: bold;
 
+}
+
+.Menubar .menu-button:hover {
+
+    background-color: red;
+    color: white;
+    transition: 0.3s;
 }
 
 .blogs {
@@ -181,11 +187,16 @@ body {
 
     display: flex;
     margin-right: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 .blog-info-2 {
 
     display: flex;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 /* foooter section */
@@ -256,14 +267,65 @@ hr {
     color: white;
 }
 
+.match-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+}
+
+.matchs {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E8E8E8;
+    width: 312px;
+    height: 224px;
+
+
+
+}
+
+.match {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-image-1 {
+
+    margin-right: 20px;
+}
+
+.match-image-2 {
+
+    margin-left: 20px;
+}
+
+
+.match-info {
+
+    margin-top: 20px;
+}
+
+
+.match-info p {
+
+    color: #4D4D4D;
+}
+
 
 /* For Tablet */
 
-@media only screen and (min-width:687px) and (max-width:992px) {
+@media only screen and (min-width:576px) and (max-width:992px) {
 
     .banner {
         width: 100%;
         margin-bottom: 30px;
+        margin: 0 auto;
 
     }
 
@@ -319,13 +381,16 @@ hr {
     }
 
 
-    .blogs {
+    .blogs,
+    .match-section {
 
         grid-template-columns: repeat(2, 1fr);
         justify-self: center;
         align-self: center;
 
     }
+
+
 
     .view {
 
@@ -348,7 +413,7 @@ hr {
 }
 
 
-@media only screen and (max-width:686px) {
+@media only screen and (max-width:577px) {
 
     .banner {
 
@@ -401,7 +466,8 @@ hr {
 
     }
 
-    .blogs {
+    .blogs,
+    .match-section {
 
         grid-template-columns: repeat(1, 1fr);
         justify-self: center;
